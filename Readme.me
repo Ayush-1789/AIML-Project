@@ -1,0 +1,40 @@
+# Mentor-Mentee Recommendation System
+
+A machine learning-based recommendation system that matches mentees with mentors based on skills, experience, and language preferences.
+
+## Overview
+
+This recommendation system uses a two-layer approach to suggest the most suitable mentors:
+
+1. **FAISS Similarity Layer**: Identifies mentors with matching skills/expertise using vector similarity
+2. **Random Forest Layer**: Re-ranks candidates based on experience, ratings, and language compatibility
+
+## Features
+
+- Tag-based matching between mentee interests and mentor expertise
+- Experience and rating consideration in ranking
+- Language compatibility matching
+- CSV data-driven approach with no database dependencies
+- Real data training for the recommendation model
+
+## Requirements
+
+- Python 3.7+
+- Dependencies listed in `requirements.txt`
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/mentor-recommendation-system.git
+cd mentor-recommendation-system
+
+# Install dependencies
+pip install -r requirements.txt
+
+
+# For mentee recommendations
+python src/recommendation_model.py mentee <user_id>
+
+# For mentor recommendations
+python src/recommendation_model.py mentor <user_id>
