@@ -19,10 +19,10 @@ logging.basicConfig(
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Define paths to CSV files with absolute paths - removed session-related files
 CSV_PATHS = {
-    "mentees": os.path.join(BASE_DIR, "data", "updated_mentees (2).csv"),
-    "mentors": os.path.join(BASE_DIR, "data", "mentors (5).csv"),
-    "users": os.path.join(BASE_DIR, "data", "indian_users_fixed.csv"),
-    "mentee_tags": os.path.join(BASE_DIR, "data", "_MenteeTags (5).csv"),
+    "mentees": os.path.join(BASE_DIR, "data", "mentees.csv"),
+    "mentors": os.path.join(BASE_DIR, "data", "mentors.csv"),
+    "users": os.path.join(BASE_DIR, "data", "users.csv"),
+    "mentee_tags": os.path.join(BASE_DIR, "data", "_MenteeTags.csv"),
     "mentor_tags": os.path.join(BASE_DIR, "data", "mentor_tags.csv"),
     "tags": os.path.join(BASE_DIR, "data", "tags_with_skills_mapping.csv"),
     "reviews": os.path.join(BASE_DIR, "data", "reviews.csv")
